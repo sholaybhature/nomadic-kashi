@@ -1,0 +1,11 @@
+/* Small production-pass overrides for touch targets and contact controls. */
+.floating-actions a{min-width:46px;min-height:46px}
+.floating-actions .float-whatsapp,.floating-actions .float-call{font-size:0;position:relative}
+.floating-actions .float-whatsapp::before{content:'WA';font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.03em}
+.floating-actions .float-call::before{content:'☎';font-family:Arial,sans-serif;font-size:18px;line-height:1}
+@media(max-width:720px){
+  .floating-actions{right:15px;bottom:15px;gap:8px}
+  .floating-actions a{width:46px;height:46px}
+  .hero-actions .button{min-height:48px}
+  .contact-form .button,.booking-form .button{min-height:48px}
+}
